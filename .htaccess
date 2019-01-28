@@ -1,0 +1,13 @@
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /etc/apache2/.htpasswd
+Require valid-user
+
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME}.html -f
+#RewriteRule !.*\.html$ %{REQUEST_FILENAME} [L]
+
+#RewriteCond %{REQUEST_FILENAME} !-d 
+#RewriteCond %{REQUEST_FILENAME}\.php -f 
+#RewriteRule ^(.*)$ $1.php
+
